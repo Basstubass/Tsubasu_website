@@ -1,0 +1,57 @@
+.footer_elem{
+    text-align: center;
+    background-color: #FFC14F;
+    height: 120px;
+}
+
+hr {
+    margin: 0 auto;
+    border-width: .5px 0px 0px 0px; /* 太さ */
+    color: rgba(0, 0, 0, 0.5);
+    border-style: solid; /* 線種 */
+    height: 1px;         /* 高さ(※古いIE用) */
+    width: 90%;
+ }
+
+ .footer_main{
+    margin-left: 50%;
+    transform:  translateX(-50%);
+    background: #FFC14F;
+    height: 80px;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0.5rem calc((100vh - 1000px) / 2);
+    z-index: 10;
+ }
+ .FooterLink{
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    margin-left: 4%;
+ }
+ .FooterLink img{
+     height: 60px;
+ }
+
+ .FooterMenu{
+        display: flex;
+        align-items: center;
+        margin-left: 2%;
+        font-size: 20px;
+        font-family: 'PT Serif', serif;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+ }
+.footer_icon{
+    display: -webkit-inline-box;
+    margin-left: 30%;
+    cursor: pointer;
+}
+svg{
+    padding-left: 20px;
+}

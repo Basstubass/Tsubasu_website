@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Quattrocento:wght@400;700&display=swap');
+
+.contact{
+    text-align: center;
+    background-color: #FFC14F;
+}
+.contact_aria{
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+.contact_aria h1{
+    margin: 0;
+    font-family: 'PT Serif', serif;
+}
+.contact_from{
+    margin-top: 6%;
+    padding-bottom: 5%;
+}
+.from_aria{
+    margin-bottom: 2%;
+}
+.from_aria p{
+    display: inline;
+    margin-right: 3%;
+    font-family: 'PT Serif', serif;
+}
+.from_aria input{
+    border-radius: 30px;
+    border: none;
+    padding: 5px;
+    width: 10%;
+}
+.from_aria textarea{
+    border-radius: 30px;
+    border: none;
+    padding: 5px;
+    width: 10%;
+}
+#comment_form{
+    height: 100px;
+    vertical-align: top;
+    width: 13%;
+}

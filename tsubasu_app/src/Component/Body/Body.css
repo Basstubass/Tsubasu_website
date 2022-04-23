@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Quattrocento:wght@400;700&display=swap');
+
+.main_body{
+    text-align: center;
+    background-color: #FFC14F;
+}
+.main{
+    position: relative;
+}
+.main h2{
+    position: absolute;
+    font-size: 50px;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    font-family: Georgia;
+    font-weight: normal;
+}
+.main p{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    font-size: 35px;
+    font-family: Georgia;
+}
+.main img{
+    height: 450px;
+    opacity: 0.3;
+}
+.portfolio h1{
+    font-family: 'PT Serif', serif;
+}
+.portfolio{
+    margin-top: 20%;
+    padding-bottom: 10%;
+}
+
+.portfolio_aria{
+    margin-top: 12%;
+}
+.portfolio_post{
+    margin-bottom: 7%;
+}
+.portfolio_post p{
+    margin: 0;
+}
+
+.portfolio_post:nth-child(odd) {
+    margin-left: 35%;
+  }
+.portfolio_post:nth-child(even) {
+    margin-right: 35%;
+  }
