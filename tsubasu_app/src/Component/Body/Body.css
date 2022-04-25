@@ -15,6 +15,15 @@
     transform: translate(-50%,-50%);
     font-family: Georgia;
     font-weight: normal;
+
+    width: 460px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid rgba(255,255,255,.5);
+    animation: typing 2s steps(10),blink .5s steps(1) infinite alternate;
 }
 .main p{
     position: absolute;
@@ -23,11 +32,69 @@
     transform: translate(-50%,-50%);
     font-size: 35px;
     font-family: Georgia;
+    -webkit-animation: Fade_in 4s ease 1s 1 normal;
+    animation: Fade_in 4s ease 0s 1 normal;
 }
 .main img{
     height: 450px;
     opacity: 0.3;
+    -webkit-animation: fadeIn 2.5s ease 0s 1 normal;
+    animation: fadeIn 2.5s ease 0s 1 normal;
 }
+
+/* タイプライター */
+@keyframes typing{
+    0% {width: 0;}
+  }
+  @keyframes blink{
+    50% {border-right-color: transparent;}
+  }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+  }
+
+
+  @keyframes Fade_in {
+    0% {
+      opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes Fade_in {
+    0% {
+      opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
+
+
+
+
 .portfolio h1{
     font-family: 'PT Serif', serif;
 }

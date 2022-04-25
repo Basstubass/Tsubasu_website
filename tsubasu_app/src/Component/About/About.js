@@ -48,8 +48,8 @@ function About() {
                         <p id="commig" >Commig soon...</p>
                     </div>
                 </div>   
-            </div>
         </div>
+    </div>
       
     );
   }
