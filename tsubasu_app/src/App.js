@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import Body from './Component/Body/Body';
 import About from './Component/About/About';
 import Contact from './Component/Contact/Contact';
+import Error from "./Component/Error/error";
 
 // import db from "./firebase";
 // import {collection,getDocs, onSnapshot} from "firebase/firestore";
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" element={<Body />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<Error/>} />
     </Routes>
   );
 }

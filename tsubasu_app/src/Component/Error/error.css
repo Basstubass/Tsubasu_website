@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Quattrocento:wght@400;700&display=swap');
+
+
+.notfound {
+    text-align: center;
+    margin-top: 13%;
+    margin-bottom: 5%;
+    height: 350px;
+}
+
+.notfound h2{
+    font-size: 50px;
+    font-family: 'PT Serif', serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.notfound p{
+    font-size: 30px;
+    font-family: 'PT Serif', serif;
+}

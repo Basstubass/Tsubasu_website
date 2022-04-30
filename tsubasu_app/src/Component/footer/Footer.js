@@ -23,27 +23,41 @@ const Footer = () => {
                         <div className="Bars">
                         </div>
                         <div className="FooterMenu">
-                            <div className="NavLink" to="/Portfolio">
-                                Portfolio
-                            </div>
-                            <div className="NavLink" to="/About">
-                                About
-                            </div>
-                            <div className="NavLink" to="/Contact">
-                                Contact
-                            </div>
+                            <a href="/">
+                                <div className="NavLink" to="/Portfolio">
+                                    Portfolio
+                                </div>
+                            </a>
+                            <a href="/about">
+                                <div className="NavLink" to="/About">
+                                    About
+                                </div>
+                            </a>
+                            <a href="/contact">
+                                <div className="NavLink" to="/Contact">
+                                    Contact
+                                </div>
+                            </a>
                             <div className="footer_icon">
                                 <div className="footer_icon_f" to="/icon">
-                                    <FontAwesomeIcon icon={faFacebookF} />
-                                </div>
-                                <div className="footer_icon_in" to="/icon">
-                                    <FontAwesomeIcon icon={faInstagram} />
+                                    <a href="*">
+                                        <FontAwesomeIcon icon={faFacebookF} />
+                                    </a>
+                                </div> 
+                               <div className="footer_icon_in" to="/icon">
+                                    <a href="https://www.instagram.com/bass_ta_tubass/">
+                                        <FontAwesomeIcon icon={faInstagram} />
+                                    </a>
                                 </div>
                                 <div className="footer_icon_Tw" to="/icon">
-                                    <FontAwesomeIcon icon={faTwitter} />
+                                    <a href="*">
+                                        <FontAwesomeIcon icon={faTwitter} />
+                                    </a>
                                 </div>
                                 <div className="footer_icon_You" to="/icon">
-                                    <FontAwesomeIcon icon={faYoutube} />
+                                    <a href="https://www.youtube.com/channel/UCgVZq_PmJ45hcO4v-1x478Q">
+                                        <FontAwesomeIcon icon={faYoutube} />
+                                    </a>
                                 </div>
                             </div>
                         </div>

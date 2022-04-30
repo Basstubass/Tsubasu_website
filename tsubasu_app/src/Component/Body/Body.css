@@ -108,6 +108,7 @@
 }
 .portfolio_post{
     margin-bottom: 7%;
+
 }
 .portfolio_post p{
     margin: 0;
@@ -119,3 +120,15 @@
 .portfolio_post:nth-child(even) {
     margin-right: 35%;
   }
+
+/* ポートフォリオアニメーション処理 */
+.test{
+    opacity: 0;
+    transform: translateY(-200px);
+}
+.test_visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition:all 3s;
+
+}

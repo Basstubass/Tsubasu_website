@@ -22,6 +22,22 @@ function Body() {
         setPosts(posts.doc.map((doc) => ({...doc.data() })));
       });
     }, []);
+
+    //スクロール処理
+    const [isVisible, setIsVisible] = useState(false)
+
+    const toggleVisibility = () => {
+      console.log(window.scrollY)
+      window.scrollY > 40
+        ? setIsVisible(true)
+        : setIsVisible(false)
+      }
+
+    useEffect(() => {
+      window.addEventListener('scroll', toggleVisibility)
+      return () => window.removeEventListener('scroll', toggleVisibility)
+    }, [])
+
   
     return (
         <div className="main_body">
@@ -37,15 +53,17 @@ function Body() {
                 <div className="portfolio_aria">
                     <div className="portfolio_app">
                         {posts.map((post) => (
-                        <div className="portfolio_post" key={post.title}>
-                            <h1>{post.title}</h1>
-                            <p>{post.text}</p>
+                        <div className={isVisible ? "portfolio_post test_visible" : "portfolio_post test"} key={post.title}>
+                          <h1>{post.title}</h1>
+                          
+                          　<iframe width="560" height="315" src={post.text} title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
                         </div>
                         ))}
+                       
+  
+                        
                     </div>
                 </div>
-
-
             </div>  
         </div>
       
@@ -53,4 +71,3 @@ function Body() {
   }
   
 export default Body;
-
