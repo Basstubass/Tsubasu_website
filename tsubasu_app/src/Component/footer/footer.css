@@ -42,10 +42,12 @@ hr {
         align-items: center;
         margin-left: 2%;
         font-size: 20px;
+        color: #000;
         font-family: 'PT Serif', serif;
         @media screen and (max-width: 768px) {
             display: none;
         }
+        
  }
 .footer_icon{
     display: -webkit-inline-box;
