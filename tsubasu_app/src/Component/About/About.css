@@ -1,5 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Quattrocento:wght@400;700&display=swap');
+@media screen and (max-width: 480px){
 
+    .About h1{
+        font-size: 20px !important; 
+        font-weight: normal;
+      }
+
+    .About_aria{
+        margin-left: 33% !important;
+    }
+    .About_app{
+        display: inline !important;
+    }
+    .About_app img{
+        height: 150px !important;
+        margin-left: 40%;
+    }
+
+    
+    .profile {
+        width: 350px !important;
+        margin-left:0 !important;
+        position: relative;
+    }
+    .profile h1{
+        text-align: center !important;
+    }
+    .profile p{
+        text-align: center !important;
+        margin-left: 0 !important;
+        padding-top: 5% !important;
+        margin:0 !important;
+    }
+
+    .creer_aria{
+        margin-left: 40% !important;
+    }
+    .creer_aria p{
+        display: flex !important;
+    }
+
+
+}
 .main_body{
     text-align: center;
     background-color: #FFC14F;

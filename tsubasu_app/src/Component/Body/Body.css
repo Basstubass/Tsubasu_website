@@ -1,134 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Quattrocento:wght@400;700&display=swap');
 
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  .main img{
+    width: 75% !important;
+    height: 30% !important;
+  }
+  .main h2{
+    font-size: 25px !important;
+    /* width: 250px !important; */
+  }
+  .main p{
+    font-size: 17px !important;
+    margin-top: 30px;
+  }
+  .portfolio h1{
+    font-size: 20px !important; 
+    font-weight: normal;
+  }
+  .portfolio_post{
+    margin: 0 !important;
+  }
+  .portfolio_post iframe{
+    width: 300px !important;
+    height: 169px !important;
+  }
+  .test{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+}
+
+
+
+
+
 .main_body{
-    text-align: center;
-    background-color: #FFC14F;
+  text-align: center;
+  background-color: #FFC14F;
 }
 .main{
-    position: relative;
+  position: relative;
 }
 .main h2{
-    position: absolute;
-    font-size: 50px;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%,-50%);
-    font-family: Georgia;
-    font-weight: normal;
+  position: absolute;
+  font-size: 50px;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-50%);
+  font-family: Georgia;
+  font-weight: normal;
 
-    width: 460px;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: .1em;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 1px solid rgba(255,255,255,.5);
-    animation: typing 2s steps(10),blink .5s steps(1) infinite alternate;
+  width: 460px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid rgba(255,255,255,.5);
+  animation: typing 2s steps(10),blink .5s steps(1) infinite alternate;
 }
 .main p{
-    position: absolute;
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%,-50%);
-    font-size: 35px;
-    font-family: Georgia;
-    -webkit-animation: Fade_in 4s ease 1s 1 normal;
-    animation: Fade_in 4s ease 0s 1 normal;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%,-50%);
+  font-size: 35px;
+  font-family: Georgia;
+  -webkit-animation: Fade_in 4s ease 1s 1 normal;
+  animation: Fade_in 4s ease 0s 1 normal;
 }
 .main img{
-    height: 450px;
-    opacity: 0.3;
-    -webkit-animation: fadeIn 2.5s ease 0s 1 normal;
-    animation: fadeIn 2.5s ease 0s 1 normal;
+  height: 450px;
+  opacity: 0.3;
+  -webkit-animation: fadeIn 2.5s ease 0s 1 normal;
+  animation: fadeIn 2.5s ease 0s 1 normal;
 }
 
 /* タイプライター */
 @keyframes typing{
-    0% {width: 0;}
-  }
-  @keyframes blink{
-    50% {border-right-color: transparent;}
-  }
+  0% {width: 0;}
+}
+@keyframes blink{
+  50% {border-right-color: transparent;}
+}
 
 @keyframes fadeIn {
-    0% {
-      opacity: 0
-    }
-
-    100% {
-        opacity: 0.3;
-    }
+  0% {
+    opacity: 0
   }
 
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0
-    }
+  100% {
+      opacity: 0.3;
+  }
+}
 
-    100% {
-        opacity: 0.3;
-    }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
   }
 
+  100% {
+      opacity: 0.3;
+  }
+}
 
-  @keyframes Fade_in {
-    0% {
-      opacity: 0
-    }
 
-    100% {
-        opacity: 1;
-    }
+@keyframes Fade_in {
+  0% {
+    opacity: 0
   }
 
-  @-webkit-keyframes Fade_in {
-    0% {
-      opacity: 0
-    }
-
-    100% {
-        opacity: 1;
-    }
+  100% {
+      opacity: 1;
   }
+}
+
+@-webkit-keyframes Fade_in {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
 
 
 
 
 
 .portfolio h1{
-    font-family: 'PT Serif', serif;
+  font-family: 'PT Serif', serif;
 }
 .portfolio{
-    margin-top: 20%;
-    padding-bottom: 10%;
+  margin-top: 20%;
+  padding-bottom: 10%;
 }
 
 .portfolio_aria{
-    margin-top: 12%;
+  margin-top: 12%;
 }
 .portfolio_post{
-    margin-bottom: 7%;
+  margin-bottom: 7%;
 
 }
 .portfolio_post p{
-    margin: 0;
+  margin: 0;
 }
 
 .portfolio_post:nth-child(odd) {
-    margin-left: 35%;
-  }
+  margin-left: 35%;
+}
 .portfolio_post:nth-child(even) {
-    margin-right: 35%;
-  }
+  margin-right: 35%;
+}
 
 /* ポートフォリオアニメーション処理 */
 .test{
-    opacity: 0;
-    transform: translateY(-200px);
+  opacity: 0;
+  transform: translateY(-200px);
 }
 .test_visible{
-    opacity: 1;
-    transform: translateY(0);
-    transition:all 3s;
+  opacity: 1;
+  transform: translateY(0);
+  transition:all 3s;
 
 }
+

@@ -20,7 +20,7 @@ function About() {
                         <img src={About_icon} alt="About"></img>
                         <div className="profile" id="flex_aria">
                             <h1>ようこそ</h1>
-                            <p>自己紹介</p>
+                            <p className="comment">自己紹介</p>
                             <p>ここは私、水田翼のWEBサイトです。
                                 面白そうと思ったことはなんでもやっていく人間です。
                                 CODEGYM ACADEMYやデータサイエンティストの講義を受講しました。

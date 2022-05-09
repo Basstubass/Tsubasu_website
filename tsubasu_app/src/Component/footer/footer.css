@@ -1,7 +1,27 @@
+@media screen and (max-width: 480px) {
+    .footer_main{
+        margin-left: 32% !important;
+        transform:  translateX(-50%);
+        background: #FFC14F;
+        height: 80px;
+        display: flex;
+        /* justify-content: space-between; */
+        padding: 0.5rem calc((100vh - 1000px) / 2);
+        z-index: 10;
+     }
+
+     .footer_icon{
+         position: absolute;
+         margin-top: 45%;
+         margin-left: 6% !important;
+    }
+}
+
+
 .footer_elem{
     text-align: center;
     background-color: #FFC14F;
-    height: 120px;
+    height: 150px;
 }
 
 hr {

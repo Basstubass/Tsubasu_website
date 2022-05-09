@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Quattrocento:wght@400;700&display=swap');
+@media screen and (max-width: 480px) {
 
+  .contact_aria h1{
+    font-size: 20px !important; 
+    font-weight: normal;
+  }
+  .contact_from{
+    margin-top: 20% !important;
+    margin-bottom: 5% !important;
+  }
+  .button{
+    margin-top: 5% !important;
+    margin-bottom: 15% !important;
+    width: 60px !important;
+  }
+  .from_aria p{
+    font-size: 20px;
+  }
+  .from_aria input{
+    width: 150px !important;
+  }
+  .from_aria textarea{
+    width: 150px !important;
+  }
+
+}
 body{
     background-color: #FFC14F;
 }
